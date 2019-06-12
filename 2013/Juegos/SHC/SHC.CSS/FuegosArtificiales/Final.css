@@ -1,0 +1,36 @@
+@font-face{
+    font-family: "fuente";
+    src: url("../SHC.Font/KGALittleSwag.ttf") format("truetype");
+}
+body {
+    background-color: #000;
+    overflow: hidden;
+    margin: 0;
+}
+div {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+canvas {
+    background-color: #000; 
+    position: absolute;
+}
+#divTitulo  
+{
+    -webkit-transform: rotatez(-5deg);
+    -webkit-transition: -webkit-transform 2s;
+    -webkit-box-reflect: below -40px
+        -webkit-gradient(linear, left top, left bottom, from(transparent),
+            to(rgba(255, 255, 255, 0.6)));
+    font-family: "fuente";
+    position: relative;
+    text-align: center;
+    top: 30px;
+    font-size: 4em;
+    color: black;
+    text-shadow: 0px 0px 5px white;
+}
+#divTitulo:hover
+{
+    -webkit-transform: rotatez(5deg);
+}

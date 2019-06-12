@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>FireWorks</title>
+    <meta charset="UTF-8" />
+    <script language="javascript" type="text/javascript" src="../SHC.Tools/Base.js"></script>
+    <link rel="stylesheet" type="text/css" href="../SHC.CSS/FuegosArtificiales/Final.css">
+    <script>
+        window.addEventListener("resize", resizeCanvas, false);
+        window.addEventListener("DOMContentLoaded", onLoad, false);
+        
+        window.requestAnimationFrame = 
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback)
+                {
+                    window.setTimeout(callback, 1000/60);
+                };
+        
+        var canvas, context, w, h, particles = [], probability = 0.04,
+            xPoint, yPoint;
+        
+        var img = new Image();
+        img.src = "../SHC.Imagenes/ico/icoAngryBirds.png";
+
+        function onLoad()
+        {
+            canvas = document.getElementById("divCanvas");
+            context = canvas.getContext("2d");
+            resizeCanvas();
+            
+            window.requestAnimationFrame(updateWorld);
+        }
+        
+        function resizeCanvas()
+        {
+            if(!!canvas)
+            {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+            }
+        }
+        
+        function updateWorld()
+        {
+            update();
+            paint();
+            window.requestAnimationFrame(updateWorld);
+        }
+        
+        function update(){
+            if (particles.length < 500 && Math.random() < probability) {
+                createFireWork();
+            }
+            var alive = [];
+            for (i = 0; i < particles.length; i++) {
+                if (particles[i].move()) {
+                    alive.push(particles[i]);
+                }
+            }
+            particles = alive;
+        }
+        
+        function paint()
+        {
+            context.globalCompositeOperation = 'source-over';
+            context.fillStyle = "rgba(0, 0, 0, 0.2";
+            context.fillRect(0, 0, w, h);
+            context.globalCompositeOperation = 'lighter';
+            for (i = 0; i < particles.length; i++) {
+                particles[i].draw(context);
+            }
+        }
+        
+        function createFireWork()
+        {
+            xPoint = Math.random() * (w-200) + 100;
+            yPoint = Math.random() * (h-200) + 100;
+            var nFire = Math.random() * 50 + 100;
+            var aColor =  "rgb("+(~~(Math.random() * 255))+","
+                                +(~~(Math.random() * 255))+"," +(~~(Math.random() * 255))+")";
+            for (i = 0; i < nFire; i++) {
+                var oParticle = new Particle();
+                oParticle.color = aColor;
+                var vy = Math.sqrt(25 - oParticle.vx * oParticle.vx);
+                if (Math.abs(oParticle.vy) > vy)
+                {
+                    oParticle.vy = oParticle.vy > 0 ? vy : -vy;
+                }
+                particles.push(oParticle);
+            }
+        }
+        
+        function Particle()
+        {
+           this.w = this.h = Math.random() * 4 + 1;
+           this.x = xPoint - this.w/2;
+           this.y = yPoint - this.h/2;
+           this.vx = (Math.random() - 0.5) * 10;
+           this.vy = (Math.random() - 0.5) * 10;
+           this.alpha = Math.random() * 0.5 + 0.5;
+           this.color;
+        }
+        
+       Particle.prototype = {
+            gravity: 0.05,
+            move: function() {
+                    this.x += this.vx;
+                    this.vy += this.gravity;
+                    this.y += this.vy;
+                    this.alpha -= 0.01;
+                    if (this.x <= -this.w || this.x >= screen.width ||
+                        this.y >= screen.height || this.alpha <= 0) {
+                       return false;
+                    }
+                    return true;
+                },
+            draw: function (c){
+                c.save();
+                /*c.translate(this.x, this.y);
+                c.globalAlpha = this.alpha;
+                c.drawImage(img, 0, 0, this.w, this.h);*/
+                c.beginPath();
+                c.translate(this.x + this.w/2, this.y + this.h/2);
+                c.arc(0, 0, this.w, 0, Math.PI*2);
+                c.fillStyle = this.color;
+                c.globalAlpha = this.alpha;
+                c.closePath();
+                c.fill();
+                c.restore();
+            }
+        };
+       
+    </script>
+</head>
+<body>
+     <noscript>
+        No tiene habilitado JavaScript. Deberia habilitarlo para poder
+        disfrutar al completo de los contenidos de esta pagina.
+     </noscript>
+      <div>
+          <canvas id="divCanvas">
+              Tu navegador no soporta canvas.
+          </canvas>
+      </div>
+</body>
+</html>

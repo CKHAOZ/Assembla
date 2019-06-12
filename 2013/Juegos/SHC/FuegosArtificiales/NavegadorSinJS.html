@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Angry Bird</title>
+    <meta charset="UTF-8" />
+    <script language="javascript" type="text/javascript" src="../../FuegosArtificiales/SHC.Tools/Base.js"></script>
+    <script>
+        window.onload = function () {
+            if(ExisteCanvas())
+            {
+                var canvas = document.getElementById("divCanvas");
+                canvas.width = 400;
+                canvas.height = 400;
+                var context = canvas.getContext("2d");
+                context.fillStyle = "#F91";
+                context.fillRect(0, 0, 400, 400);
+            }
+            else
+            {
+                alert("Tu navegador no soporta Canvas.");
+            }
+        }
+    </script>
+</head>
+<body>
+     <noscript>
+        No tiene habilitado JavaScript. Deberia habilitarlo para poder
+        disfrutar al completo de los contenidos de esta pagina.
+     </noscript>
+      <div>
+          <canvas id="divCanvas">
+              Tu navegador no soporta canvas.
+          </canvas>
+      </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Eventos</title>
+    <meta charset="UTF-8" />
+    <script language="javascript" type="text/javascript" src="../SHC.Tools/Base.js"></script>
+    <link rel="stylesheet" type="text/css" href="../SHC.CSS/FuegosArtificiales/FuegosStyle.css">
+    <script>
+        
+        window.addEventListener("resize", resizeCanvas, false);
+        
+        var frameCount = 0, currentFPS = 0, lastFrame = new Date().getTime(); 
+        
+        var canvas, context, w, h, particles = [], xPoint, yPoint, MouseDown;
+        
+        //var img = document.createElement("img");
+        var img = new Image();
+        img.addEventListener("load", start, false);
+        img.src = "../SHC.Imagenes/ico/icoAngryBirds.png";
+
+        window.requestAnimationFrame = 
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000/60);
+                }
+
+        function start()
+        {
+            canvas = document.getElementById("divCanvas");
+            
+            canvas.addEventListener("mousemove", movepoint, false);
+            canvas.addEventListener("mousedown", mousedown, false);
+            canvas.addEventListener("mouseup", mouseup, false);
+            canvas.addEventListener("mouseout", mouseup, false);
+            
+            context = canvas.getContext("2d");
+            resizeCanvas();
+            window.requestAnimationFrame(update);
+        }
+        
+        function movepoint(e)
+        {
+            if (MouseDown) {
+                var ie = (navigator.userAgent.toLowerCase()).indexOf('msie') !== -1;
+                if (ie) {
+                    e = window.event;
+                    e.pageX = e.clientX + window.pageXOffset;
+                    e.pageY = e.clientY + window.pageYOffset;
+                }
+                xPoint = e.pageX-canvas.offsetLeft;
+                yPoint = e.pageY-canvas.offsetTop;
+            }
+        }
+        
+        function mousedown(element)
+        {
+            MouseDown = true;
+            movepoint(element);
+        }
+        
+        function mouseup()
+        {
+            MouseDown = false;
+        }
+        
+        function resizeCanvas()
+        {
+            if(!!canvas)
+            {
+                w = canvas.width = window.innerWidth;
+                h = canvas.height = window.innerHeight;
+                xPoint = w/2;
+                yPoint = h/2;
+            }
+        }
+        
+        function update()
+        {
+            UpdateFPS();
+            if (Math.random() < 0.1) 
+            {
+                var oParticleAux = new Particle();
+                oParticleAux.x = xPoint - img.width/2;
+                oParticleAux.y = yPoint - img.height/2;
+                particles.push(oParticleAux);   
+            }
+            moveparticles();
+            paint();
+            window.requestAnimationFrame(update);
+        }
+        
+        function UpdateFPS()
+        {
+            var ActualFrame = new Date().getTime();
+            if (ActualFrame - lastFrame >= 1000) {
+                currentFPS = frameCount;
+                frameCount = 0;
+                lastFrame = ActualFrame;
+                PaintFPS();
+            }
+            frameCount++;
+        }
+        
+        function PaintFPS()
+        {
+            var divFPS = document.getElementById('divFps');
+            var Text = document.createTextNode("FPS: "+currentFPS);
+            divFPS.replaceChild(Text, divFPS.childNodes[0]);
+        }
+        
+        function moveparticles()
+        { 
+            for (i = 0; i < particles.length; i++) {
+                particles[i].move();
+            }
+        }   
+        
+        function paint()
+        {
+            context.fillStyle = "rgba(0, 0, 0, 1)";
+            context.fillRect(0, 0, w, h);
+            for (i = 0; i < particles.length; i++) {
+                /*var x = particles[i].x, y = particles[i].y;
+                context.beginPath();
+                context.arc(x, y, 20, 0, Math.PI*2);
+                var grd = context.createRadialGradient(x, y, 0, x, y, 50);
+                grd.addColorStop(0, particles[i].color);
+                grd.addColorStop(1, "rgba(0,0,0,0)");
+                context.fillStyle = grd;
+                context.fill();*/
+                context.drawImage(img, particles[i].x, particles[i].y);
+           }
+        
+       }
+    
+        function Particle()
+        {
+           this.x = 0;
+           this.y = 0;
+           this.vx = (Math.random() - 0.5) * 10;
+           this.vy = (Math.random() - 0.5) * 10;
+           this.color = "rgb("+(~~(Math.random() * 255))+","
+                   +(~~(Math.random() * 255))+"," +(~~(Math.random() * 255))+")";
+       }
+        
+       Particle.prototype = {
+        move: function(){
+                    this.x += this.vx;
+                    this.y += this.vy;
+                }
+       };
+       
+    </script>
+</head>
+<body>
+     <noscript>
+        No tiene habilitado JavaScript. Deberia habilitarlo para poder
+        disfrutar al completo de los contenidos de esta pagina.
+     </noscript>
+      <div>
+          <canvas id="divCanvas">
+              Tu navegador no soporta canvas.
+          </canvas>
+          <div id="divFps">
+              
+          </div>
+      </div>
+</body>
+</html>

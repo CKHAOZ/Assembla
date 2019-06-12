@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Angry Bird</title>
+    <meta charset="UTF-8" />
+    <script language="javascript" type="text/javascript" src="../SHC.Tools/Base.js"></script>
+    <link rel="stylesheet" type="text/css" href="../SHC.CSS/FuegosArtificiales/FuegosStyle.css">
+    <script>
+        var canvas, context, w, h, particles = [];
+        
+        var img = document.createElement("img");
+        img.addEventListener("load", start, false);
+        img.src = "../SHC.Imagenes/ico/icoAngryBirds.png";
+
+        function start()
+        {
+            canvas = document.getElementById("divCanvas");
+            context = canvas.getContext("2d");
+            w = canvas.width = 400;
+            h = canvas.height = 400;
+            //particles  = new Particle();
+            //particles.push(new Particle());
+            setInterval(update, 1000 / 30);
+        }
+        
+        function update()
+        {
+            if (Math.random() > 0.9) 
+            {
+                particles.push(new Particle());   
+            }
+            
+            moveparticles();
+            paint();
+        }
+         
+        function moveparticles()
+        { 
+            for (i = 0; i < particles.length; i++) {
+                particles[i].move();
+            }
+        }   
+        
+        function paint()
+        {
+            context.fillStyle = "rgba(0, 0, 0, 1)";
+            context.fillRect(0, 0, w, h);
+            for (i = 0; i < particles.length; i++) {
+               context.drawImage(img, particles[i].x, particles[i].y);
+           }
+       }
+        
+        /*function Particle()
+        {
+            return{
+                x: 0,
+                y: 0,
+                vx: 1,
+                vy: 1,
+                move: function(){
+                    this.x += this.vx;
+                    this.y += this.vy;
+                }
+            }
+        }*/
+    
+        function Particle()
+        {
+           this.x = 0;
+           this.y = 0;
+           this.vx = Math.random() * 5;
+           this.vy = Math.random() * 5;
+       }
+        
+       Particle.prototype = {
+        move: function(){
+                    this.x += this.vx;
+                    this.y += this.vy;
+                }
+       };
+       
+    </script>
+</head>
+<body>
+     <noscript>
+        No tiene habilitado JavaScript. Deberia habilitarlo para poder
+        disfrutar al completo de los contenidos de esta pagina.
+     </noscript>
+      <div>
+          <canvas id="divCanvas">
+              Tu navegador no soporta canvas.
+          </canvas>
+      </div>
+</body>
+</html>
