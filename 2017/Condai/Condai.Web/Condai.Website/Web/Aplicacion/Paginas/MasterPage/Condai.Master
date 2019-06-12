@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Condai.master.cs" Inherits="Condai.Web.Web.MasterPage.Condai" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Condai </title>
+    <!-- Ico Page -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/image/General/Condai.ico" />
+    <!-- link : General -->
+    <link href="~/content/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="~/content/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/content/toastr/toastr.css" rel="stylesheet" />
+    <link href="~/content/jqueryUi/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/content/jqueryUi/jquery-ui.structure.min.css" rel="stylesheet" />
+    <link href="~/content/jqueryUi/jquery-ui.theme.min.css" rel="stylesheet" />
+    <!-- link : Condai -->
+    <link href="~/content/icoMoon/IcoMoon.css" rel="stylesheet" />
+    <link href="~/style/Aplicacion/MasterPage/MasterPage.css" rel="stylesheet" />    
+    <link href="~/style/General/Cargando/Cargando.css" rel="stylesheet" />
+    <link href="~/style/General/Cargando/paceBounce.css" rel="stylesheet" />
+    <!-- script project : General -->
+    <script type="text/javascript" src="../../../../scripts/Library/jquery/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Library/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Library/notifyJs/notify.min.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Library/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Library/jqueryUi/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Library/icoMoon/icoMoonCore.js"></script>
+    <!-- Content Place Holder -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Entity -->
+    <script type="text/javascript" src="../../../../scripts/Entity/EntidadesMasterPage.js"></script>
+    <!-- BLL -->
+    <script type="text/javascript" src="../../../../scripts/BLL/MasterPage/BLLMasterPage.js"></script>
+    <script type="text/javascript" src="../../../../scripts/BLL/Seguridad/BLLSeguridad.js"></script>
+    <!-- Tools -->
+    <script type="text/javascript" src="../../../../scripts/Tools/Tools.js"></script>
+    <!-- script project : Condai -->
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/Paginas/Condai/Condai.js"></script>
+    <!-- script project : Condai Seguridad -->
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/Seguridad/Seguridad.js"></script>
+    <!-- script project : Condai Usuarios -->
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/Paginas/Usuario/Usuario.js"></script>
+    <!-- script project : Condai Master -->
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/General/Validaciones/Validaciones.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/DocumentReady/GlobalMasterPage.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/General/Mensajes/Notify.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/General/Mensajes/Toastr.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/General/Cargando/Cargando.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/Paginas/MasterPage/CondaiMaster.js"></script>
+    <script type="text/javascript" src="../../../../scripts/Aplicacion/DocumentReady/CargarSitioMasterPage.js"></script>
+</head>
+<body>
+    <form id="frmCondai" runat="server">
+        <!-- Master Page -->
+        <div>
+            <!-- Barra Horizontal -->
+            <div class="divMenuUbicacion">
+                <div class="divMenuHorizontal">
+                    <!-- Logo -->
+                    <div class="divLogoMargin">
+                        <div class="divLogoCirculo">
+                            <a id="btnSHC" runat="server" href="~/Web/Aplicacion/Paginas/Condai/Condai.aspx">
+                                <img src="../../../../image/General/SHCLogo.png" class="LogoCondai" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Cerrar Sesión -->
+                    <div class="divLogoMarginRight">
+                        <div class="divLogoCirculoCerrarSesion">
+                            <a id="btnCloseSesion" runat="server" class="icon icon-exit handIcon iconExit "></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divContenido">
+                    <!-- Contenido -->
+                    <asp:ContentPlaceHolder ID="cphPrincipal" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- Menú -->
+            <div id="divMenuMP"></div>
+
+            <!-- Footer -->
+            <div class="shcPieCondai">
+                <p>SHC Software Hecho en Colombia</p>
+            </div>
+        </div> 
+        <!-- Link Master Page-->
+        <asp:LinkButton ID="lnkCerrarSesion" runat="server" OnClick="lnkCerrarSesion_Click"></asp:LinkButton>
+        <!-- Link Usuarios -->
+        <asp:LinkButton ID="lnkGuardarUsuarioUP" runat="server" OnClick="GuardarUsuario_Click"></asp:LinkButton>
+         <!-- Modal -->
+        <div id="divCargando"></div>
+        <!-- Hiddenfield Paginas -->
+        <asp:HiddenField ID="hdfUsuario" runat="server" Value="0" />
+        <asp:HiddenField ID="hdfCondai" runat="server" Value="0" />
+        <!-- Hiddenfield Seguridad-->
+        <asp:HiddenField ID="hdfSeguridadUsuario" runat="server" Value="0" />
+        <!-- HiddenField Usuarios -->
+        <asp:HiddenField id="hdfUsuarioUP" runat="server" />    
+    </form>
+</body>
+</html>

@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Intel i3 2.9\Alejandro\Desarrollo\2015\PublishCondai</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Condai.Eventos.BLL.dll">
+      <publishTime>05/13/2015 23:12:21</publishTime>
+    </File>
+    <File Include="bin/Condai.Eventos.DAL.dll">
+      <publishTime>05/13/2015 23:12:21</publishTime>
+    </File>
+    <File Include="bin/Condai.Eventos.Entity.dll">
+      <publishTime>05/13/2015 23:12:20</publishTime>
+    </File>
+    <File Include="bin/Condai.Web.Eventos.dll">
+      <publishTime>05/13/2015 23:27:17</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/25/2015 22:53:20</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css">
+      <publishTime>03/16/2015 08:42:08</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css.map">
+      <publishTime>03/16/2015 08:42:08</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.min.css">
+      <publishTime>03/16/2015 08:42:10</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css">
+      <publishTime>03/16/2015 08:42:10</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css.map">
+      <publishTime>03/16/2015 08:42:08</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.min.css">
+      <publishTime>03/16/2015 08:42:10</publishTime>
+    </File>
+    <File Include="content/icoMoon/IcoMoon.css">
+      <publishTime>02/10/2015 22:32:55</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_222222_256x240.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_454545_256x240.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_888888_256x240.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.min.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.structure.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.structure.min.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.theme.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.theme.min.css">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.css">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.less">
+      <publishTime>01/25/2015 22:38:33</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.min.css">
+      <publishTime>01/25/2015 22:38:33</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.scss">
+      <publishTime>01/25/2015 22:45:52</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="fonts/IcoMoonFont.ttf">
+      <publishTime>12/23/2014 04:02:10</publishTime>
+    </File>
+    <File Include="image/General/BoostrapCargando.gif">
+      <publishTime>01/25/2015 22:45:52</publishTime>
+    </File>
+    <File Include="image/General/SHCLogo.png">
+      <publishTime>05/01/2015 18:07:43</publishTime>
+    </File>
+    <File Include="image/Login/Contactenos.jpg">
+      <publishTime>05/01/2015 19:45:58</publishTime>
+    </File>
+    <File Include="image/Login/WebSite.jpg">
+      <publishTime>05/13/2015 23:05:29</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/13/2015 22:24:06</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/13/2015 23:26:59</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Base.js">
+      <publishTime>01/25/2015 22:56:36</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Condai.js">
+      <publishTime>05/13/2015 22:25:14</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Global.js">
+      <publishTime>05/04/2015 19:33:45</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Toastr.js">
+      <publishTime>01/26/2015 22:00:59</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Paginas/Login.js">
+      <publishTime>05/11/2015 20:39:17</publishTime>
+    </File>
+    <File Include="scripts/bootstrap/bootstrap.js">
+      <publishTime>03/16/2015 08:42:10</publishTime>
+    </File>
+    <File Include="scripts/bootstrap/bootstrap.min.js">
+      <publishTime>03/16/2015 08:42:10</publishTime>
+    </File>
+    <File Include="scripts/icoMoon/icoMoonCore.js">
+      <publishTime>12/23/2014 04:02:10</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.js">
+      <publishTime>01/25/2015 22:44:03</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.min.js">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.min.map">
+      <publishTime>01/25/2015 22:44:03</publishTime>
+    </File>
+    <File Include="scripts/jqueryUi/jquery-ui.js">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="scripts/jqueryUi/jquery-ui.min.js">
+      <publishTime>01/25/2015 20:24:24</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/additional-methods.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/additional-methods.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/jquery.validate.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/jquery.validate.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ar.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ar.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_bg.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_bg.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ca.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ca.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_cs.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_cs.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_da.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_da.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_de.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_de.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_el.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_el.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_es.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_es.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_es_AR.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_es_AR.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_et.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_et.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_eu.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_eu.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fa.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fa.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fi.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fi.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fr.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_fr.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_gl.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_gl.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_he.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_he.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_hr.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_hr.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_hu.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_hu.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_id.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_id.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_is.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_is.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_it.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_it.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ja.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ja.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ka.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ka.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_kk.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_kk.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ko.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ko.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_lt.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_lt.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_lv.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_lv.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_my.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_my.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_nl.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_nl.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_no.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_no.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pl.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pl.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pt_BR.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pt_BR.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pt_PT.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_pt_PT.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ro.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ro.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ru.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_ru.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_si.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_si.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sk.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sk.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sl.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sl.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sr.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sr.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sr_lat.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sr_lat.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sv.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_sv.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_th.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_th.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_tj.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_tj.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_tr.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_tr.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_uk.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_uk.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_vi.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_vi.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_zh.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_zh.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_zh_TW.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/messages_zh_TW.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_de.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_de.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_es_CL.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_es_CL.min.js">
+      <publishTime>05/12/2015 22:40:41</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_fi.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_fi.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_nl.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_nl.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_pt.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/jqueryValidator/localization/methods_pt.min.js">
+      <publishTime>05/12/2015 22:40:39</publishTime>
+    </File>
+    <File Include="scripts/toastr/toastr.js">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="scripts/toastr/toastr.min.js">
+      <publishTime>01/25/2015 22:43:46</publishTime>
+    </File>
+    <File Include="style/login/Login.css">
+      <publishTime>05/13/2015 23:10:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/13/2015 23:27:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

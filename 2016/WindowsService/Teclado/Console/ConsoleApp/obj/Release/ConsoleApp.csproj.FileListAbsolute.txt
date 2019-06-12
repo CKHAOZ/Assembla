@@ -1,0 +1,9 @@
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\ConsoleApp.exe.config
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\ConsoleApp.exe
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\ConsoleApp.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\Gma.UserActivityMonitor.dll
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\bin\Release\Tools.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\obj\Release\ConsoleApp.csprojResolveAssemblyReference.cache
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\obj\Release\ConsoleApp.exe
+D:\Condai\Codigo\WindowsService\Teclado\Console\ConsoleApp\obj\Release\ConsoleApp.pdb

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Condai.Web.servicios.Aplicacion.LOL" CodeBehind="LOL.svc.cs" %>

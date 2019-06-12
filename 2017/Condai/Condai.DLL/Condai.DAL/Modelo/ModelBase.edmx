@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CondaiModelBase.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="CondaiModelBaseStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CondaiModelBase" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CondaiBase" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Base_Aplicacion" EntityType="CondaiModelBase.Base_Aplicacion" />
+          <EntitySet Name="Base_Departamento" EntityType="CondaiModelBase.Base_Departamento" />
+          <EntitySet Name="Base_Municipio" EntityType="CondaiModelBase.Base_Municipio" />
+          <EntitySet Name="Base_Pais" EntityType="CondaiModelBase.Base_Pais" />
+          <AssociationSet Name="FK__Base_Depa__paiId__31EC6D26" Association="CondaiModelBase.FK__Base_Depa__paiId__31EC6D26">
+            <End Role="Base_Pais" EntitySet="Base_Pais" />
+            <End Role="Base_Departamento" EntitySet="Base_Departamento" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Base_Muni__depId__36B12243" Association="CondaiModelBase.FK__Base_Muni__depId__36B12243">
+            <End Role="Base_Departamento" EntitySet="Base_Departamento" />
+            <End Role="Base_Municipio" EntitySet="Base_Municipio" />
+          </AssociationSet>
+          <EntitySet Name="Base_Menu" EntityType="CondaiModelBase.Base_Menu" />
+          <EntitySet Name="Base_Cliente" EntityType="CondaiModelBase.Base_Cliente" />
+          <EntitySet Name="Base_Empresa" EntityType="CondaiModelBase.Base_Empresa" />
+          <EntitySet Name="Base_Parametro" EntityType="CondaiModelBase.Base_Parametro" />
+          <EntitySet Name="Base_ParametroCascada" EntityType="CondaiModelBase.Base_ParametroCascada" />
+          <EntitySet Name="Base_ParametroDescripcion" EntityType="CondaiModelBase.Base_ParametroDescripcion" />
+          <AssociationSet Name="FK_Base_Cliente_Base_Parametro" Association="CondaiModelBase.FK_Base_Cliente_Base_Parametro">
+            <End Role="Base_Parametro" EntitySet="Base_Parametro" />
+            <End Role="Base_Cliente" EntitySet="Base_Cliente" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Base_Empresa_Base_Parametro" Association="CondaiModelBase.FK_Base_Empresa_Base_Parametro">
+            <End Role="Base_Parametro" EntitySet="Base_Parametro" />
+            <End Role="Base_Empresa" EntitySet="Base_Empresa" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Base_Parametro_Base_ParametroDescripcion" Association="CondaiModelBase.FK_Base_Parametro_Base_ParametroDescripcion">
+            <End Role="Base_ParametroDescripcion" EntitySet="Base_ParametroDescripcion" />
+            <End Role="Base_Parametro" EntitySet="Base_Parametro" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Base_ParametroCascada_Base_Parametro" Association="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro">
+            <End Role="Base_Parametro" EntitySet="Base_Parametro" />
+            <End Role="Base_ParametroCascada" EntitySet="Base_ParametroCascada" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Base_ParametroCascada_Base_Parametro1" Association="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro1">
+            <End Role="Base_Parametro" EntitySet="Base_Parametro" />
+            <End Role="Base_ParametroCascada" EntitySet="Base_ParametroCascada" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Base_Aplicacion">
+          <Key>
+            <PropertyRef Name="aplId" />
+          </Key>
+          <Property Name="aplId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="aplNombre" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="aplDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="Base_Departamento">
+          <Key>
+            <PropertyRef Name="depId" />
+          </Key>
+          <Property Name="depId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="paiId" Type="Int32" Nullable="false" />
+          <Property Name="depNombre" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="depDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="depCodigoDane" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Base_Pais" Relationship="CondaiModelBase.FK__Base_Depa__paiId__31EC6D26" FromRole="Base_Departamento" ToRole="Base_Pais" />
+          <NavigationProperty Name="Base_Municipio" Relationship="CondaiModelBase.FK__Base_Muni__depId__36B12243" FromRole="Base_Departamento" ToRole="Base_Municipio" />
+        </EntityType>
+        <EntityType Name="Base_Municipio">
+          <Key>
+            <PropertyRef Name="munId" />
+          </Key>
+          <Property Name="munId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="depId" Type="Int32" Nullable="false" />
+          <Property Name="munNombre" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="munDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="munCodigoDane" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Base_Departamento" Relationship="CondaiModelBase.FK__Base_Muni__depId__36B12243" FromRole="Base_Municipio" ToRole="Base_Departamento" />
+        </EntityType>
+        <EntityType Name="Base_Pais">
+          <Key>
+            <PropertyRef Name="paiId" />
+          </Key>
+          <Property Name="paiId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="paiNombre" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="paiDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="paiCodigoDane" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Base_Departamento" Relationship="CondaiModelBase.FK__Base_Depa__paiId__31EC6D26" FromRole="Base_Pais" ToRole="Base_Departamento" />
+        </EntityType>
+        <Association Name="FK__Base_Depa__paiId__31EC6D26">
+          <End Type="CondaiModelBase.Base_Pais" Role="Base_Pais" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_Departamento" Role="Base_Departamento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Pais">
+              <PropertyRef Name="paiId" />
+            </Principal>
+            <Dependent Role="Base_Departamento">
+              <PropertyRef Name="paiId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Base_Muni__depId__36B12243">
+          <End Type="CondaiModelBase.Base_Departamento" Role="Base_Departamento" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_Municipio" Role="Base_Municipio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Departamento">
+              <PropertyRef Name="depId" />
+            </Principal>
+            <Dependent Role="Base_Municipio">
+              <PropertyRef Name="depId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Base_Menu">
+          <Key>
+            <PropertyRef Name="menId" />
+          </Key>
+          <Property Name="menId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="menIcono" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="menNombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="menDireccion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="menActivo" Type="Boolean" Nullable="false" />
+          <Property Name="menOrden" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Base_Cliente">
+          <Key>
+            <PropertyRef Name="cliId" />
+          </Key>
+          <Property Name="cliId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="parIdTCL" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parValorTCL" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="cliIdentificacion" Type="String" Nullable="false" MaxLength="22" FixedLength="false" Unicode="false" />
+          <Property Name="cliNombre" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="cliDireccion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="cliTelefono" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="cliCorreo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="cliActivo" Type="Boolean" Nullable="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Base_Parametro" Relationship="CondaiModelBase.FK_Base_Cliente_Base_Parametro" FromRole="Base_Cliente" ToRole="Base_Parametro" />
+        </EntityType>
+        <EntityType Name="Base_Empresa">
+          <Key>
+            <PropertyRef Name="empId" />
+          </Key>
+          <Property Name="empId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="parIdTCO" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parValorTCO" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="empCodigo" Type="String" Nullable="false" MaxLength="22" FixedLength="false" Unicode="false" />
+          <Property Name="empRazonSocial" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="empDireccion" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="empTelefono" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="empCorreo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="empActivo" Type="Boolean" Nullable="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Base_Parametro" Relationship="CondaiModelBase.FK_Base_Empresa_Base_Parametro" FromRole="Base_Empresa" ToRole="Base_Parametro" />
+        </EntityType>
+        <EntityType Name="Base_Parametro">
+          <Key>
+            <PropertyRef Name="parId" />
+            <PropertyRef Name="parValor" />
+          </Key>
+          <Property Name="parId" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parValor" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Base_Cliente" Relationship="CondaiModelBase.FK_Base_Cliente_Base_Parametro" FromRole="Base_Parametro" ToRole="Base_Cliente" />
+          <NavigationProperty Name="Base_Empresa" Relationship="CondaiModelBase.FK_Base_Empresa_Base_Parametro" FromRole="Base_Parametro" ToRole="Base_Empresa" />
+          <NavigationProperty Name="Base_ParametroDescripcion" Relationship="CondaiModelBase.FK_Base_Parametro_Base_ParametroDescripcion" FromRole="Base_Parametro" ToRole="Base_ParametroDescripcion" />
+          <NavigationProperty Name="Base_ParametroCascada" Relationship="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro" FromRole="Base_Parametro" ToRole="Base_ParametroCascada" />
+          <NavigationProperty Name="Base_ParametroCascada1" Relationship="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro1" FromRole="Base_Parametro" ToRole="Base_ParametroCascada" />
+        </EntityType>
+        <EntityType Name="Base_ParametroCascada">
+          <Key>
+            <PropertyRef Name="pacId" />
+          </Key>
+          <Property Name="pacId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="parId1" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parValor1" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parId2" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parValor2" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="cliId" Type="Int32" Nullable="false" />
+          <Property Name="empId" Type="Int32" />
+          <Property Name="pacDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Base_Parametro" Relationship="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro" FromRole="Base_ParametroCascada" ToRole="Base_Parametro" />
+          <NavigationProperty Name="Base_Parametro1" Relationship="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro1" FromRole="Base_ParametroCascada" ToRole="Base_Parametro" />
+        </EntityType>
+        <EntityType Name="Base_ParametroDescripcion">
+          <Key>
+            <PropertyRef Name="parId" />
+          </Key>
+          <Property Name="parId" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="parDescripcion" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Base_Parametro" Relationship="CondaiModelBase.FK_Base_Parametro_Base_ParametroDescripcion" FromRole="Base_ParametroDescripcion" ToRole="Base_Parametro" />
+        </EntityType>
+        <Association Name="FK_Base_Cliente_Base_Parametro">
+          <End Type="CondaiModelBase.Base_Parametro" Role="Base_Parametro" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_Cliente" Role="Base_Cliente" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Parametro">
+              <PropertyRef Name="parId" />
+              <PropertyRef Name="parValor" />
+            </Principal>
+            <Dependent Role="Base_Cliente">
+              <PropertyRef Name="parIdTCL" />
+              <PropertyRef Name="parValorTCL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Base_Empresa_Base_Parametro">
+          <End Type="CondaiModelBase.Base_Parametro" Role="Base_Parametro" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_Empresa" Role="Base_Empresa" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Parametro">
+              <PropertyRef Name="parId" />
+              <PropertyRef Name="parValor" />
+            </Principal>
+            <Dependent Role="Base_Empresa">
+              <PropertyRef Name="parIdTCO" />
+              <PropertyRef Name="parValorTCO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Base_Parametro_Base_ParametroDescripcion">
+          <End Type="CondaiModelBase.Base_ParametroDescripcion" Role="Base_ParametroDescripcion" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_Parametro" Role="Base_Parametro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_ParametroDescripcion">
+              <PropertyRef Name="parId" />
+            </Principal>
+            <Dependent Role="Base_Parametro">
+              <PropertyRef Name="parId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Base_ParametroCascada_Base_Parametro">
+          <End Type="CondaiModelBase.Base_Parametro" Role="Base_Parametro" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_ParametroCascada" Role="Base_ParametroCascada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Parametro">
+              <PropertyRef Name="parId" />
+              <PropertyRef Name="parValor" />
+            </Principal>
+            <Dependent Role="Base_ParametroCascada">
+              <PropertyRef Name="parId1" />
+              <PropertyRef Name="parValor1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Base_ParametroCascada_Base_Parametro1">
+          <End Type="CondaiModelBase.Base_Parametro" Role="Base_Parametro" Multiplicity="1" />
+          <End Type="CondaiModelBase.Base_ParametroCascada" Role="Base_ParametroCascada" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Base_Parametro">
+              <PropertyRef Name="parId" />
+              <PropertyRef Name="parValor" />
+            </Principal>
+            <Dependent Role="Base_ParametroCascada">
+              <PropertyRef Name="parId2" />
+              <PropertyRef Name="parValor2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CondaiModelBaseStoreContainer" CdmEntityContainer="CondaiBase">
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

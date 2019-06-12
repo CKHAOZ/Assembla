@@ -1,0 +1,8 @@
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\bin\Debug\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\bin\Debug\Tools.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\obj\Debug\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\obj\Debug\Tools.pdb
+D:\SHC\SHC_ALL\2016\Codigo\WindowsService\Teclado\Tools\Tools\bin\Debug\Tools.dll
+D:\SHC\SHC_ALL\2016\Codigo\WindowsService\Teclado\Tools\Tools\bin\Debug\Tools.pdb
+D:\SHC\SHC_ALL\2016\Codigo\WindowsService\Teclado\Tools\Tools\obj\Debug\Tools.dll
+D:\SHC\SHC_ALL\2016\Codigo\WindowsService\Teclado\Tools\Tools\obj\Debug\Tools.pdb

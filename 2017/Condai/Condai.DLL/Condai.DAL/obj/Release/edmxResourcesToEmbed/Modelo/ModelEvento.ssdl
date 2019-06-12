@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SHCModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Evento">
+    <Key>
+      <PropertyRef Name="eveId" />
+    </Key>
+    <Property Name="eveId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eveNombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="eveDescripcion" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="eveLugar" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="eveFecha" Type="datetime" Nullable="false" />
+    <Property Name="eveCliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="usuIdCreo" Type="int" Nullable="false" />
+    <Property Name="eveFechaCreo" Type="datetime" Nullable="false" />
+    <Property Name="usuActualiza" Type="int" Nullable="false" />
+    <Property Name="eveFechaActualiza" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SHCModel1StoreContainer">
+    <EntitySet Name="Evento" EntityType="Self.Evento" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

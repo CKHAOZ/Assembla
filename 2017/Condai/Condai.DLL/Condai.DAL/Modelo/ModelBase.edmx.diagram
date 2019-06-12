@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="96b14ab2996f460ea3ba6a20d4397adb" Name="Diagram1" ZoomLevel="88">
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Aplicacion" Width="1.5" PointX="10" PointY="7.875" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Departamento" Width="1.5" PointX="12.375" PointY="10.125" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Municipio" Width="1.5" PointX="12.5" PointY="13.625" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Pais" Width="1.5" PointX="12.375" PointY="6.75" />
+        <AssociationConnector Association="CondaiModelBase.FK__Base_Depa__paiId__31EC6D26" />
+        <AssociationConnector Association="CondaiModelBase.FK__Base_Muni__depId__36B12243" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Menu" Width="1.5" PointX="3.375" PointY="9.125" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Cliente" Width="1.5" PointX="7.875" PointY="6.375" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Empresa" Width="1.5" PointX="4.375" PointY="14.25" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_Parametro" Width="1.5" PointX="5.625" PointY="11.125" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_ParametroCascada" Width="1.5" PointX="7.875" PointY="10.875" />
+        <EntityTypeShape EntityType="CondaiModelBase.Base_ParametroDescripcion" Width="1.5" PointX="3.375" PointY="11.5" />
+        <AssociationConnector Association="CondaiModelBase.FK_Base_Cliente_Base_Parametro" />
+        <AssociationConnector Association="CondaiModelBase.FK_Base_Empresa_Base_Parametro" />
+        <AssociationConnector Association="CondaiModelBase.FK_Base_Parametro_Base_ParametroDescripcion" />
+        <AssociationConnector Association="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro" />
+        <AssociationConnector Association="CondaiModelBase.FK_Base_ParametroCascada_Base_Parametro1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

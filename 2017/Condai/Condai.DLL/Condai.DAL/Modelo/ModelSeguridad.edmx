@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CondaiModelSeguridad.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Seguridad_Rol">
+          <Key>
+            <PropertyRef Name="rouId" />
+          </Key>
+          <Property Name="rouId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="rouNombre" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="rouDescripcion" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="usuIdCreo" Type="int" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="datetime" Nullable="false" />
+          <Property Name="usuIdActualizo" Type="int" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seguridad_RolesPorUsuario">
+          <Key>
+            <PropertyRef Name="rpuId" />
+          </Key>
+          <Property Name="rpuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="usuId" Type="int" Nullable="false" />
+          <Property Name="rouId" Type="int" Nullable="false" />
+          <Property Name="usuIdCreo" Type="int" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="datetime" Nullable="false" />
+          <Property Name="usuIdActualizo" Type="int" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Seguridad_Usuario">
+          <Key>
+            <PropertyRef Name="usuId" />
+          </Key>
+          <Property Name="usuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="usuUsuario" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="usuDescripcion" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="usuClave" Type="varchar" MaxLength="125" Nullable="false" />
+          <Property Name="usuNombre" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="usuApellido" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="usuCorreo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="usuTelefono" Type="bigint" Nullable="false" />
+          <Property Name="usuActivo" Type="bit" Nullable="false" />
+          <Property Name="usuFechaUltimoIngreso" Type="datetime" Nullable="false" />
+          <Property Name="usuIdCreo" Type="int" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="datetime" Nullable="false" />
+          <Property Name="usuIdActualizo" Type="int" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Seguridad__rouId__2B3F6F97">
+          <End Role="Seguridad_Rol" Type="Self.Seguridad_Rol" Multiplicity="1" />
+          <End Role="Seguridad_RolesPorUsuario" Type="Self.Seguridad_RolesPorUsuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seguridad_Rol">
+              <PropertyRef Name="rouId" />
+            </Principal>
+            <Dependent Role="Seguridad_RolesPorUsuario">
+              <PropertyRef Name="rouId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CondaiModelSeguridadStoreContainer">
+          <EntitySet Name="Seguridad_Rol" EntityType="Self.Seguridad_Rol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Seguridad_RolesPorUsuario" EntityType="Self.Seguridad_RolesPorUsuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Seguridad_Usuario" EntityType="Self.Seguridad_Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Seguridad__rouId__2B3F6F97" Association="Self.FK__Seguridad__rouId__2B3F6F97">
+            <End Role="Seguridad_Rol" EntitySet="Seguridad_Rol" />
+            <End Role="Seguridad_RolesPorUsuario" EntitySet="Seguridad_RolesPorUsuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CondaiModelSeguridad" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Seguridad_Rol">
+          <Key>
+            <PropertyRef Name="rouId" />
+          </Key>
+          <Property Name="rouId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="rouNombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rouDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Seguridad_RolesPorUsuario" Relationship="Self.FK__Seguridad__rouId__2B3F6F97" FromRole="Seguridad_Rol" ToRole="Seguridad_RolesPorUsuario" />
+        </EntityType>
+        <EntityType Name="Seguridad_RolesPorUsuario">
+          <Key>
+            <PropertyRef Name="rpuId" />
+          </Key>
+          <Property Name="rpuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usuId" Type="Int32" Nullable="false" />
+          <Property Name="rouId" Type="Int32" Nullable="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Seguridad_Rol" Relationship="Self.FK__Seguridad__rouId__2B3F6F97" FromRole="Seguridad_RolesPorUsuario" ToRole="Seguridad_Rol" />
+        </EntityType>
+        <EntityType Name="Seguridad_Usuario">
+          <Key>
+            <PropertyRef Name="usuId" />
+          </Key>
+          <Property Name="usuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="usuUsuario" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuDescripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuClave" Type="String" MaxLength="125" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuNombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuApellido" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuCorreo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuTelefono" Type="Int64" Nullable="false" />
+          <Property Name="usuActivo" Type="Boolean" Nullable="false" />
+          <Property Name="usuFechaUltimoIngreso" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuIdActualizo" Type="Int32" Nullable="false" />
+          <Property Name="usuFechaActualizo" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="FK__Seguridad__rouId__2B3F6F97">
+          <End Role="Seguridad_Rol" Type="Self.Seguridad_Rol" Multiplicity="1" />
+          <End Role="Seguridad_RolesPorUsuario" Type="Self.Seguridad_RolesPorUsuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Seguridad_Rol">
+              <PropertyRef Name="rouId" />
+            </Principal>
+            <Dependent Role="Seguridad_RolesPorUsuario">
+              <PropertyRef Name="rouId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CondaiEntitiesSeguridad" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Seguridad_Rol" EntityType="Self.Seguridad_Rol" />
+          <EntitySet Name="Seguridad_RolesPorUsuario" EntityType="Self.Seguridad_RolesPorUsuario" />
+          <EntitySet Name="Seguridad_Usuario" EntityType="Self.Seguridad_Usuario" />
+          <AssociationSet Name="FK__Seguridad__rouId__2B3F6F97" Association="Self.FK__Seguridad__rouId__2B3F6F97">
+            <End Role="Seguridad_Rol" EntitySet="Seguridad_Rol" />
+            <End Role="Seguridad_RolesPorUsuario" EntitySet="Seguridad_RolesPorUsuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CondaiModelSeguridadStoreContainer" CdmEntityContainer="CondaiEntitiesSeguridad">
+          <EntitySetMapping Name="Seguridad_Rol">
+            <EntityTypeMapping TypeName="CondaiModelSeguridad.Seguridad_Rol">
+              <MappingFragment StoreEntitySet="Seguridad_Rol">
+                <ScalarProperty Name="rouId" ColumnName="rouId" />
+                <ScalarProperty Name="rouNombre" ColumnName="rouNombre" />
+                <ScalarProperty Name="rouDescripcion" ColumnName="rouDescripcion" />
+                <ScalarProperty Name="usuIdCreo" ColumnName="usuIdCreo" />
+                <ScalarProperty Name="usuFechaCreo" ColumnName="usuFechaCreo" />
+                <ScalarProperty Name="usuIdActualizo" ColumnName="usuIdActualizo" />
+                <ScalarProperty Name="usuFechaActualizo" ColumnName="usuFechaActualizo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seguridad_RolesPorUsuario">
+            <EntityTypeMapping TypeName="CondaiModelSeguridad.Seguridad_RolesPorUsuario">
+              <MappingFragment StoreEntitySet="Seguridad_RolesPorUsuario">
+                <ScalarProperty Name="rpuId" ColumnName="rpuId" />
+                <ScalarProperty Name="usuId" ColumnName="usuId" />
+                <ScalarProperty Name="rouId" ColumnName="rouId" />
+                <ScalarProperty Name="usuIdCreo" ColumnName="usuIdCreo" />
+                <ScalarProperty Name="usuFechaCreo" ColumnName="usuFechaCreo" />
+                <ScalarProperty Name="usuIdActualizo" ColumnName="usuIdActualizo" />
+                <ScalarProperty Name="usuFechaActualizo" ColumnName="usuFechaActualizo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Seguridad_Usuario">
+            <EntityTypeMapping TypeName="CondaiModelSeguridad.Seguridad_Usuario">
+              <MappingFragment StoreEntitySet="Seguridad_Usuario">
+                <ScalarProperty Name="usuId" ColumnName="usuId" />
+                <ScalarProperty Name="usuUsuario" ColumnName="usuUsuario" />
+                <ScalarProperty Name="usuDescripcion" ColumnName="usuDescripcion" />
+                <ScalarProperty Name="usuClave" ColumnName="usuClave" />
+                <ScalarProperty Name="usuNombre" ColumnName="usuNombre" />
+                <ScalarProperty Name="usuApellido" ColumnName="usuApellido" />
+                <ScalarProperty Name="usuCorreo" ColumnName="usuCorreo" />
+                <ScalarProperty Name="usuTelefono" ColumnName="usuTelefono" />
+                <ScalarProperty Name="usuActivo" ColumnName="usuActivo" />
+                <ScalarProperty Name="usuFechaUltimoIngreso" ColumnName="usuFechaUltimoIngreso" />
+                <ScalarProperty Name="usuIdCreo" ColumnName="usuIdCreo" />
+                <ScalarProperty Name="usuFechaCreo" ColumnName="usuFechaCreo" />
+                <ScalarProperty Name="usuIdActualizo" ColumnName="usuIdActualizo" />
+                <ScalarProperty Name="usuFechaActualizo" ColumnName="usuFechaActualizo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

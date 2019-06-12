@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SHCModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Evento">
+          <Key>
+            <PropertyRef Name="eveId" />
+          </Key>
+          <Property Name="eveId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="eveNombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="eveDescripcion" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="eveLugar" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="eveFecha" Type="datetime" Nullable="false" />
+          <Property Name="eveCliente" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="usuIdCreo" Type="int" Nullable="false" />
+          <Property Name="eveFechaCreo" Type="datetime" Nullable="false" />
+          <Property Name="usuActualiza" Type="int" Nullable="false" />
+          <Property Name="eveFechaActualiza" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SHCModel1StoreContainer">
+          <EntitySet Name="Evento" EntityType="Self.Evento" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SHCModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Evento">
+          <Key>
+            <PropertyRef Name="eveId" />
+          </Key>
+          <Property Name="eveId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="eveNombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eveDescripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eveLugar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="eveFecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="eveCliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usuIdCreo" Type="Int32" Nullable="false" />
+          <Property Name="eveFechaCreo" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="usuActualiza" Type="Int32" Nullable="false" />
+          <Property Name="eveFechaActualiza" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="SHCEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Eventoes" EntityType="Self.Evento" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SHCModel1StoreContainer" CdmEntityContainer="SHCEntities1">
+          <EntitySetMapping Name="Eventoes">
+            <EntityTypeMapping TypeName="SHCModel1.Evento">
+              <MappingFragment StoreEntitySet="Evento">
+                <ScalarProperty Name="eveId" ColumnName="eveId" />
+                <ScalarProperty Name="eveNombre" ColumnName="eveNombre" />
+                <ScalarProperty Name="eveDescripcion" ColumnName="eveDescripcion" />
+                <ScalarProperty Name="eveLugar" ColumnName="eveLugar" />
+                <ScalarProperty Name="eveFecha" ColumnName="eveFecha" />
+                <ScalarProperty Name="eveCliente" ColumnName="eveCliente" />
+                <ScalarProperty Name="usuIdCreo" ColumnName="usuIdCreo" />
+                <ScalarProperty Name="eveFechaCreo" ColumnName="eveFechaCreo" />
+                <ScalarProperty Name="usuActualiza" ColumnName="usuActualiza" />
+                <ScalarProperty Name="eveFechaActualiza" ColumnName="eveFechaActualiza" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

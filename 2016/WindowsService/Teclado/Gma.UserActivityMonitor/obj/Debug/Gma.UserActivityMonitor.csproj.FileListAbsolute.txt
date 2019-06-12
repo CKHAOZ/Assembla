@@ -1,0 +1,11 @@
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.csprojResolveAssemblyReference.cache
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+D:\Condai\Codigo\WindowsService\Teclado\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+D:\Condai\Codigo\WindowsService\Teclado\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+D:\Condai\Codigo\WindowsService\Teclado\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb

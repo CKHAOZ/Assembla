@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Personal\2015\CondaiPublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Condai.BLL.dll">
+      <publishTime>05/24/2015 18:07:29</publishTime>
+    </File>
+    <File Include="bin/Condai.DAL.dll">
+      <publishTime>05/24/2015 18:07:29</publishTime>
+    </File>
+    <File Include="bin/Condai.Entity.dll">
+      <publishTime>05/23/2015 21:00:59</publishTime>
+    </File>
+    <File Include="bin/Condai.Tools.dll">
+      <publishTime>05/24/2015 18:07:29</publishTime>
+    </File>
+    <File Include="bin/Condai.Web.dll">
+      <publishTime>05/24/2015 21:52:30</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/24/2015 18:02:13</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/24/2015 18:02:13</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.Client.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/02/2013 12:10:10</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>05/23/2015 20:49:32</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>05/23/2015 20:49:33</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Services.resources.dll">
+      <publishTime>05/23/2015 20:49:34</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>05/23/2015 20:49:31</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.css.map">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap-theme.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.css.map">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/bootstrap/bootstrap.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/icoMoon/IcoMoon.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_222222_256x240.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_454545_256x240.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_888888_256x240.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.structure.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.structure.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.theme.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/jqueryUi/jquery-ui.theme.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.less">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.min.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="content/toastr/toastr.scss">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="fonts/IcoMoonFont.ttf">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="image/General/Condai.ico">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="image/General/SHCLogo.png">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="image/Login/Contactenos.jpg">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="image/Login/WebSite.jpg">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="image/Login/WebSiteTwo.jpg">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>05/23/2015 20:59:56</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/24/2015 18:02:13</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Entity/EntidadesLogin.js">
+      <publishTime>05/21/2015 19:59:04</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Condai.js">
+      <publishTime>05/21/2015 19:59:08</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Global.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/General/Toastr.js">
+      <publishTime>05/21/2015 19:59:07</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Paginas/Login.js">
+      <publishTime>05/24/2015 21:59:38</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Validaciones/Notify.js">
+      <publishTime>05/21/2015 19:59:07</publishTime>
+    </File>
+    <File Include="scripts/Aplicacion/Validaciones/Validaciones.js">
+      <publishTime>05/21/2015 19:59:08</publishTime>
+    </File>
+    <File Include="scripts/BLL/Login/BLLLogin.js">
+      <publishTime>05/21/2015 19:59:04</publishTime>
+    </File>
+    <File Include="scripts/bootstrap/bootstrap.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/bootstrap/bootstrap.min.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/icoMoon/icoMoonCore.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.min.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-2.1.3.min.map">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/jqueryUi/jquery-ui.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/jqueryUi/jquery-ui.min.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/notifyJs/notify.min.js">
+      <publishTime>05/21/2015 19:59:03</publishTime>
+    </File>
+    <File Include="scripts/toastr/toastr.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="scripts/toastr/toastr.min.js">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="servicios/Aplicacion/Login/Login.svc">
+      <publishTime>05/23/2015 20:57:44</publishTime>
+    </File>
+    <File Include="style/general/General.css">
+      <publishTime>05/21/2015 19:58:51</publishTime>
+    </File>
+    <File Include="style/login/Login.css">
+      <publishTime>05/21/2015 19:59:03</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/24/2015 21:52:30</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

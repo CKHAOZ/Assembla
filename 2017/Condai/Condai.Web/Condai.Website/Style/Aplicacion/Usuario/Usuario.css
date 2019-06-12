@@ -1,0 +1,120 @@
+﻿.divPrincipal {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.agrupacion {
+    margin: 2%;
+    width: 96%;
+    background-color: white;
+    height: 60%;
+    box-shadow: rgba(10, 7, 6, 1) 0px 0px 8px;
+}
+
+.contenidoIzq {
+    float: left;
+    width: 60%;
+}
+
+.contenidoDer {
+    float: right;
+    width: 35%;
+}
+
+.imagenAvatar {
+    width: 140px;
+    height: 140px;
+    margin: 25px;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.ContenidoUsuario {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.tblInput {
+    margin-left: 2%;
+    margin-top: 8%;
+    width:100%;
+}
+
+.tblInputContrasena{
+    margin-top: 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.labelTitulo {
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.labelTituloPass {
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    padding-right: 5px;
+    width: 40%;
+}
+
+.txtIngreso {
+    margin: 3px;
+}
+
+.tblCambioPass{
+    width:90%
+}
+
+.textboxIngreso {
+    width: 60%;
+}
+
+.labelIngreso{
+    width: 60%;
+}
+
+.titulo {
+    color: white;
+}
+
+.buttonStyle {
+    height: 34px;
+    margin: 18px 0 0 0 !important;
+}
+
+.buttonStyleLeft {
+    height: 34px;
+    margin: 18px 0 0 0 !important;
+    padding-left: 20px;
+}
+
+.btnCamera{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.labelUsuario{
+    text-align:left;
+    color:white;
+}
+
+.botonModificar{
+    text-align: left !important;
+}
+
+.divCamera{
+    text-align: center;
+}
+
+.fileUpload{
+    color: white !important;
+    height: 30px !important;
+}

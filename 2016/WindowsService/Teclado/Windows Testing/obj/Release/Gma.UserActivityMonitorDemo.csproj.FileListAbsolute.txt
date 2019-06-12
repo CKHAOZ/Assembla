@@ -1,0 +1,11 @@
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Release\Gma.UserActivityMonitorDemo.exe.config
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Release\Gma.UserActivityMonitorDemo.exe
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Release\Gma.UserActivityMonitorDemo.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Release\Gma.UserActivityMonitor.dll
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.csprojResolveAssemblyReference.cache
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.TestFormStatic.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.TestFormComponent.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.Properties.Resources.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.csproj.GenerateResource.Cache
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.exe
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Release\Gma.UserActivityMonitorDemo.pdb

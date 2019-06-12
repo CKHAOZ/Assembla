@@ -1,0 +1,357 @@
+﻿/* General */
+body {
+    padding: 0;
+    margin: 0;
+    background: url('../../../image/Login/Contactenos.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+/* General */
+.frmLoginClass{
+    font-size: 14px;
+}
+
+/* Menú */
+.divMenu {
+    color: #333;
+    font-size: 28px;
+    margin: 0;
+    height: 100%;
+    width: 25%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.divMenuCentrado {
+    position: absolute;
+    top: 30%;
+    left: 200px;
+    width: 100px;
+    margin-left: -200px;
+    height: 530px;
+    margin-top: -150px;
+    border: none;
+}
+
+.iconoEspacio {
+    padding: 13px 0;
+}
+
+    .iconoEspacio::before {
+        padding: 6px;
+        border: solid;
+        -webkit-border-radius: 8px 23px !important;
+        -moz-border-radius: 8px 23px !important;
+    }
+
+    .iconoEspacio:hover::before {
+        background-color: white;
+        color: #333;
+        cursor: pointer;
+    }
+
+/* Footer */
+.shcPie {
+    color: rgba(255, 255, 255, 1);
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Login CSS */
+.bodyLogin {
+    text-align: center;
+    color: #fff;
+}
+
+.fondoDiv {
+    background-color: transparent;
+    color: white;
+    -webkit-border-radius: 8px 9px !important;
+    border: none;
+}
+
+.divDiv {
+    display: inline-block;
+    width: 50%;
+    background-color: rgba(25, 59, 92, 0.48);
+    box-shadow: rgba(0, 0, 0, 0.63) 0px 0px 8px;
+    border-radius: 10px;
+}
+
+.txtLogin {
+    font-style: italic;
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.buttonLogin {
+    height: 10%;
+}
+
+#divMenuUl li {
+    list-style: none;
+    height: 39px;
+    padding: 2px;
+    width: 40px;
+}
+
+#divMenuUl span {
+    width: 0;
+    left: 38px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    line-height: 39px;
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.iconHoverDisable a:hover span {
+    color: white;
+}
+
+#divMenuUl a {
+    height: 39px;
+    width: 38px;
+    display: block;
+    position: relative;
+}
+
+    /* General hover styles */
+    #divMenuUl a:hover span {
+        width: auto;
+        padding: 0 20px;
+        overflow: visible;
+    }
+
+    #divMenuUl a:hover {
+        text-decoration: none;
+    }
+
+#divMenuUl .btnMenu {
+    background-position: 0 0;
+}
+
+    #divMenuUl .btnMenu:hover {
+        background-position: 0 -39px;
+    }
+
+    #divMenuUl .btnMenu span {
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        -webkit-border-radius: 8px 18px !important;
+        -moz-border-radius: 8px 18px !important;
+        top: 8px;
+        left: 50px;
+        border: 1px;
+        border-style: solid;
+    }
+
+.btnMenu {
+    padding: 13px 0;
+    /*background-color: none;*/
+    color: white; /* #f4f4f4; #333;*/
+    text-decoration: none;
+}
+
+    .btnMenu::before {
+        padding: 6px;
+        background-color: rgba(0, 2, 3, 0.48);/*transparent;*/ /*#111;*/
+        border-color: #f4f4f4;
+        -webkit-border-radius: 8px 23px !important;
+        -moz-border-radius: 8px 23px !important;
+        box-shadow: 0 0 5px rgba(81, 147, 163, 1); /*0 0 5px rgba(255, 255, 255, 0.34);*/
+    }
+
+    .btnMenu:hover::before {
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+a:hover, a:focus {
+    box-shadow: none !important;
+}
+
+.espacioMenu {
+    padding: 26px 0 !important;
+}
+
+.divCentrado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40%;
+    display:none;
+}
+
+.divLogo {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 6%;
+}
+
+.divLogoCirculo {
+    background-color: rgb(5, 0, 0);
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.63) 0px 0px 8px;
+}
+
+#divLogin {
+    width: 40% !important;
+}
+
+#divHome {
+    width: 80% !important;
+}
+
+#divMision {
+    width: 80% !important;
+}
+
+#divVision {
+    width: 80% !important;
+}
+
+#divMobile {
+    width: 80% !important;
+}
+
+#divInstagram {
+    width: 400px !important;
+}
+
+#divTwitter {
+    width: 400px !important;
+}
+
+#divFacebook {
+    width: 400px !important;
+}
+
+#divContactenosInicio {
+    width: 80% !important;
+}
+
+#divContactenosQuienEs {
+    width: 80% !important;
+}
+
+#divContactenosInquietud {
+    width: 80% !important;
+}
+
+#divContactenosGracias {
+    width: 80% !important;
+}
+
+#divLogin {
+    width: 400px !important;
+}
+
+.textoPlano {
+    text-shadow: none !important;
+    padding: 0 0 25px 0;
+    font-size: medium;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.textoPlanoCentrado {
+    text-shadow: none !important;
+    padding: 0 0 25px 0;
+    font-size: medium;
+    text-align: center;
+    font-size: 18px;
+}
+
+.iconoTituloDiv {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    cursor: default !important;
+    font-size: 60px;
+}
+
+/* Letras disponibles */
+
+.LetraRaw {
+    font-family: Raw;
+}
+
+.LetraRegina {
+    font-family: Regina;
+}
+
+.LetraCaviar {
+    font-family: Caviar;
+}
+
+/* Diseño de logo */
+
+.LogoCondai {
+    width: 100px;
+}
+
+.linkInstagram {
+    color: rgb(2, 14, 106) !important;
+    text-decoration: underline;
+}
+
+.handIcon {
+    cursor: pointer;
+}
+
+    .handIcon:hover {
+        cursor: pointer !important;
+        color: black;
+    }
+
+/* Contacto */
+
+.BotonContacto {
+    font-size: 25px;
+}
+
+.divLogoCirculoContacto {
+    background-color: rgb(0, 1, 2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.63) 0px 0px 8px;
+    color: white;
+}
+
+.TextoContacto {
+    width: 100%;
+    margin: 0 0 7px 0;
+}

@@ -1,0 +1,10 @@
+use bookstore
+
+db.createCollection('books')
+db.createCollection('genres')
+
+db.genres.insert({name:'suspense'})
+db.genres.insert({name:'Self help'})
+
+db.books.insert({title:'the murder house', genre:'suspense', description:'this the description for this book', author:'James Patterson', publisher:'Brown & Company', pages: '480' })
+db.books.insert({title:'Truth or die', genre:'suspense', description:'this the description for this book', author:'James Patterson', publisher:'Brown & Company', pages: '490' })

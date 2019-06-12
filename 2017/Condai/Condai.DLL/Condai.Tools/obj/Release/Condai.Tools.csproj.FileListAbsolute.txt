@@ -1,0 +1,7 @@
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\bin\Release\Condai.Tools.dll
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\bin\Release\Condai.Tools.pdb
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\bin\Release\Condai.Entity.dll
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\bin\Release\Condai.Entity.pdb
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\obj\Release\Condai.Tools.csprojResolveAssemblyReference.cache
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\obj\Release\Condai.Tools.dll
+D:\Personal\2015\Codigo\Condai\Condai.DLL\Condai.Tools\obj\Release\Condai.Tools.pdb

@@ -1,0 +1,5 @@
+D:\Condai\Codigo\Condai\Condai.Web\Condai.Website\Condai.TypeScript\bin\Condai.TypeScript.dll.config
+D:\Condai\Codigo\Condai\Condai.Web\Condai.Website\Condai.TypeScript\bin\Condai.TypeScript.dll
+D:\Condai\Codigo\Condai\Condai.Web\Condai.Website\Condai.TypeScript\bin\Condai.TypeScript.pdb
+D:\Condai\Codigo\Condai\Condai.Web\Condai.Website\Condai.TypeScript\obj\Debug\Condai.TypeScript.dll
+D:\Condai\Codigo\Condai\Condai.Web\Condai.Website\Condai.TypeScript\obj\Debug\Condai.TypeScript.pdb

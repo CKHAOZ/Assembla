@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Condai.Web.servicios.Aplicacion.MasterPage.MasterPage" CodeBehind="MasterPage.svc.cs" %>

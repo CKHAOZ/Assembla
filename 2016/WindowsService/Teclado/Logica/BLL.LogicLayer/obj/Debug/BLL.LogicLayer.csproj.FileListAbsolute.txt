@@ -1,0 +1,7 @@
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\bin\Debug\BLL.LogicLayer.dll
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\bin\Debug\BLL.LogicLayer.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\obj\Debug\BLL.LogicLayer.dll
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\obj\Debug\BLL.LogicLayer.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\bin\Debug\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\bin\Debug\Tools.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Logica\BLL.LogicLayer\obj\Debug\BLL.LogicLayer.csprojResolveAssemblyReference.cache

@@ -1,0 +1,23 @@
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\bin\Debug\Gma.UserActivityMonitorDemo.exe
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\bin\Debug\Gma.UserActivityMonitorDemo.pdb
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.csprojResolveAssemblyReference.cache
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.TestFormStatic.resources
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.TestFormComponent.resources
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.Properties.Resources.resources
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.csproj.GenerateResource.Cache
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.exe
+C:\Users\BCubillos\Desktop\GlobalHook\Gma.UserActivityMonitorDemo\obj\Debug\Gma.UserActivityMonitorDemo.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.exe
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Debug\Gma.UserActivityMonitorDemo.exe
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Debug\Gma.UserActivityMonitorDemo.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Debug\Gma.UserActivityMonitor.dll
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Debug\Gma.UserActivityMonitor.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.csprojResolveAssemblyReference.cache
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.TestFormStatic.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.TestFormComponent.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.Properties.Resources.resources
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\obj\Debug\Gma.UserActivityMonitorDemo.csproj.GenerateResource.Cache
+D:\Condai\Codigo\WindowsService\Teclado\Windows Testing\bin\Debug\Gma.UserActivityMonitorDemo.exe.config

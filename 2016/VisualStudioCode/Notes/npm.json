@@ -1,0 +1,29 @@
+ /*
+
+    1 - this is for instal Package.json
+
+    npm init
+    and response questions    
+
+    write this :
+
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+    And ...
+
+        ,
+    "dependencies": {
+        "express": "*",
+        "body-parser": "*",
+        "mongoose": "*"
+    },
+
+
+    2 - Cuando cambia una libreria en el packet json se debe hacer lo siguiente en la carpeta de package.
+    
+    npm install
+
+
+

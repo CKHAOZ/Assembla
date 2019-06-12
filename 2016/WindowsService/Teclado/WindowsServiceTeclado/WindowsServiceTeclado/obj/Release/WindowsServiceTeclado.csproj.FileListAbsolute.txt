@@ -1,0 +1,13 @@
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\WindowsServiceTeclado.exe.config
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\WindowsServiceTeclado.exe
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\WindowsServiceTeclado.pdb
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\BLL.LogicLayer.dll
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\BLL.LogicLayer.pdb
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\bin\Release\Tools.pdb
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.csprojResolveAssemblyReference.cache
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.ProjectInstaller.resources
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.ServiceWrirelesKeyboard.resources
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.csproj.GenerateResource.Cache
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.exe
+D:\Condai\Codigo\WindowsService\Teclado\WindowsServiceTeclado\WindowsServiceTeclado\obj\Release\WindowsServiceTeclado.pdb

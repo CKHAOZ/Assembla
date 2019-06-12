@@ -1,0 +1,4 @@
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\bin\Release\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\bin\Release\Tools.pdb
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\obj\Release\Tools.dll
+D:\Condai\Codigo\WindowsService\Teclado\Tools\Tools\obj\Release\Tools.pdb

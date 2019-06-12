@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SHCModel1StoreContainer" CdmEntityContainer="SHCEntities1">
+    <EntitySetMapping Name="Eventoes">
+      <EntityTypeMapping TypeName="SHCModel1.Evento">
+        <MappingFragment StoreEntitySet="Evento">
+          <ScalarProperty Name="eveId" ColumnName="eveId" />
+          <ScalarProperty Name="eveNombre" ColumnName="eveNombre" />
+          <ScalarProperty Name="eveDescripcion" ColumnName="eveDescripcion" />
+          <ScalarProperty Name="eveLugar" ColumnName="eveLugar" />
+          <ScalarProperty Name="eveFecha" ColumnName="eveFecha" />
+          <ScalarProperty Name="eveCliente" ColumnName="eveCliente" />
+          <ScalarProperty Name="usuIdCreo" ColumnName="usuIdCreo" />
+          <ScalarProperty Name="eveFechaCreo" ColumnName="eveFechaCreo" />
+          <ScalarProperty Name="usuActualiza" ColumnName="usuActualiza" />
+          <ScalarProperty Name="eveFechaActualiza" ColumnName="eveFechaActualiza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

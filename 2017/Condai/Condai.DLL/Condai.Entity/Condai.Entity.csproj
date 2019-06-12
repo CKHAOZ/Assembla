@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{167634E7-769B-4C2C-BD4A-B2D62C6900BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Condai.Entity</RootNamespace>
+    <AssemblyName>Condai.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\Condai.Eventos.DAL\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\Condai.Eventos.DAL\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Base_Aplicacion.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Cliente.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Departamento.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Empresa.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Menu.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Municipio.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Pais.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_Parametro.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_ParametroCascada.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Base_ParametroDescripcion.cs">
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\EntityModelBase.cs" />
+    <Compile Include="Base\EntityModelBase1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModelBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\ManejoTransacion.cs" />
+    <Compile Include="Base\Transaccion.cs" />
+    <Compile Include="Contacto\Contacto_Inquietud.cs">
+      <DependentUpon>EntityModelContacto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto\EntityModelContacto.cs" />
+    <Compile Include="Contacto\EntityModelContacto1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModelContacto.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enum\Estado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\EntityModelSeguridad.cs" />
+    <Compile Include="Seguridad\EntityModelSeguridad1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityModelSeguridad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Seguridad_Rol.cs">
+      <DependentUpon>EntityModelSeguridad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Seguridad_RolesPorUsuario.cs">
+      <DependentUpon>EntityModelSeguridad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Seguridad_Usuario.cs">
+      <DependentUpon>EntityModelSeguridad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Test\Motorcycle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Base\EntityModelBase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityModelBase1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Contacto\EntityModelContacto.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityModelContacto1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Seguridad\EntityModelSeguridad.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EntityModelSeguridad1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
